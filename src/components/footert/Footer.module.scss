@@ -1,0 +1,41 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.footerBlock {
+  width: 100%;
+  background-color: $backgroundColor;
+
+  .container {
+    @include containerOfItems();
+    margin: 0 auto;
+    font-weight: bold;
+    color: $textColor;
+
+    & h3 {
+      margin: 0;
+    }
+
+    .itemsContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 50%;
+
+      .item {
+        height: 50px;
+        width: 50px;
+        background-color: #a19776;
+        @media (max-width: 629px) {
+          height: 30px;
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

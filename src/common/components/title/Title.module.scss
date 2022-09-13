@@ -1,0 +1,29 @@
+@import "src/common/styles/sass/variables";
+
+.title {
+  position: relative;
+  margin: 0 0 30px;
+
+  & h2 {
+    font-weight: 700;
+    color: $primaryColor;
+    font-family: $titleFontFamily;
+    line-height: 1.618;
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    background: $redColor;
+    width: 55px;
+    height: 2px;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+}
+
+
+

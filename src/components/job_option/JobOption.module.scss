@@ -1,0 +1,24 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.jobOptionBlock {
+  height: 100%;
+  background-color: $backgroundColor;
+
+  .container {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+

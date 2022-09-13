@@ -1,0 +1,14 @@
+@import "src/common/styles/sass/variables";
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid $redColor;
+  height: 80px;
+  background-color: $backgroundColor;
+  @media (max-width: 479px) {
+    justify-content: center;
+  }
+}
+

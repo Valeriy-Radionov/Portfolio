@@ -1,0 +1,21 @@
+@import "src/common/styles/sass/variables";
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  border: 1px solid $redColor;
+  background-color: $backgroundColor;
+  text-align: center;
+  border-radius: 1rem;
+  margin-bottom: 10px;
+
+  .icon {
+    height: 60px;
+    width: 60px;
+    background-color: #789ca1;
+  }
+}
+
+

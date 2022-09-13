@@ -1,0 +1,14 @@
+@mixin containerOfItems($flexDirection: column) {
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  flex-direction: $flexDirection;
+}
+
+@mixin blockOfItems() {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}

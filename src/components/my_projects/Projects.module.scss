@@ -1,0 +1,22 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.projectsBlock {
+  background-color: $backgroundColor;
+  height: 100%;
+
+  .container {
+    @include containerOfItems();
+    margin: 0 auto;
+    flex-wrap: nowrap;
+
+    .projects {
+      @include blockOfItems();
+      @media (max-width: 629px) {
+        justify-content: center;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+

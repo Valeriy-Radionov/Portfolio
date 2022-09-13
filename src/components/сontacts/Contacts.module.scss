@@ -1,0 +1,24 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.contactsBlock {
+  width: 100%;
+  background-color: $backgroundColor;
+
+  .container {
+    @include containerOfItems();
+    margin: 0 auto;
+    justify-content: center;
+
+    .formContainer {
+      display: flex;
+      margin: 10px 0px;
+      flex-direction: column;
+    }
+
+  }
+}
+
+
+
+

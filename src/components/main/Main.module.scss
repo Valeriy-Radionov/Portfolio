@@ -1,0 +1,80 @@
+@import "src/common/styles/sass/variables";
+@import "src/common/styles/sass/mixins";
+
+.mainBlock {
+  height: 100vh;
+  background-color: $backgroundColor;
+
+  .container {
+    @include containerOfItems(row);
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    @media (max-width: 749px) {
+      justify-content: center;
+    }
+  }
+
+  .greetings {
+    background-color: $backgroundColor;
+
+    & span {
+      color: $textColor;
+      font-family: $baseFont;
+    }
+
+    & p {
+      color: $textColor;
+    }
+
+    & h1 {
+      font-family: $titleFontFamily;
+      color: $primaryColor;
+    }
+
+    @media (max-width: 749px) {
+      font-size: 20px;
+    }
+
+    .animationText {
+      width: 19ch;
+      white-space: nowrap;
+      color: $textColor;
+      font-family: $mono;
+      overflow: hidden;
+      border-right: 4px solid $textColor;
+      animation: flashingBorder 0.75s step-end infinite,
+      printedText 4.5s steps(19) infinite;
+
+      @keyframes printedText {
+        from {
+          width: 0;
+        }
+      }
+
+      @keyframes flashingBorder {
+        0% {
+          border-color: $textColor;
+        }
+        50% {
+          border-color: transparent;
+        }
+        100% {
+          border-color: $primaryColor;
+        }
+      }
+    }
+  }
+
+  .avatarImage {
+    width: 300px;
+    height: 400px;
+    background-color: lightslategray;
+    background-image: url("../../assets/images/avatar.jpeg");
+    background-size: cover;
+    background-position: center;
+    @media (max-width: 749px) {
+      height: 300px;
+    }
+  }
+}
