@@ -10,12 +10,14 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 0 auto;
-    @media (max-width: 749px) {
+    @media (max-width: 810px) {
       justify-content: center;
     }
   }
 
   .greetings {
+    padding-right: 10px;
+
     background-color: $backgroundColor;
 
     & span {
@@ -73,8 +75,8 @@
     background-image: url("../../assets/images/avatar.jpeg");
     background-size: cover;
     background-position: center;
-    @media (max-width: 749px) {
-      height: 300px;
-    }
+    //@media (max-width: 749px) {
+    //  height: 300px;
+    //}
   }
 }

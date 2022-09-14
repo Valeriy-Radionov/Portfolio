@@ -6,10 +6,7 @@ type SuperButtonPropsType = DefaultButtonPropsType & {}
 
 export const Button: React.FC<SuperButtonPropsType> = ({...restProps}) => {
     return (
-        <button
-            className={style.main}
-            {...restProps}
-        />
+        <button className={style.btn + " " + style.third} {...restProps}/>
     );
 };
 

@@ -5,7 +5,8 @@
   color: $textColor;
   font-family: $baseFont;
   justify-content: space-between;
-  width: 300px;
+  margin-right: 5vh;
+  width: 50vh;
 
   & a {
     font-weight: 600;
@@ -14,5 +15,9 @@
     line-height: 1.5em;
     text-decoration: none;
     transition: all 0.5s;
+  }
+
+  @media (max-width: 629px) {
+    margin-left: 5vh;
   }
 }

@@ -1,14 +1,49 @@
 @import "src/common/styles/sass/variables";
 
-.main {
-  position: relative;
+.btn {
+  box-sizing: border-box;
   z-index: 1;
-  font-family: $baseFont;
   font-weight: 500;
-  height: 40px;
   min-width: 120px;
+  //-webkit-appearance: none;
+  //-moz-appearance: none;
+  //display: -webkit-box;
+  //display: -webkit-flex;
+  //display: -ms-flexbox;
+  //-webkit-align-self: center;
+  //-ms-flex-item-align: center;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid $redColor;
+  border-radius: 0.6em;
+  color: $redColor;
+  cursor: pointer;
   font-size: 16px;
-  border-radius: 1rem;
-  background-color: $primaryColor;
-  color: $textColor;
+  justify-content: center;
+  line-height: 1;
+  margin: 20px;
+  height: 40px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $baseFont;
+
+  &:hover, &:focus {
+    color: $textColor;
+    outline: 0;
+  }
 }
+
+.third {
+  border-color: $primaryColor;
+  color: $textColor;
+  box-shadow: 0 0 40px 40px $primaryColor inset, 0 0 0 0 $primaryColor;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px 0 $primaryColor inset, 0 0 10px 4px $primaryColor;
+  }
+}
+
+

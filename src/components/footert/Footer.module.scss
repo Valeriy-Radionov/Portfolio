@@ -24,6 +24,9 @@
         height: 50px;
         width: 50px;
         background-color: #a19776;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
         @media (max-width: 629px) {
           height: 30px;
           width: 30px;

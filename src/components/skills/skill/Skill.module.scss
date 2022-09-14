@@ -11,10 +11,20 @@
   border-radius: 1rem;
   margin-bottom: 10px;
 
-  .icon {
+  .containerImg {
     height: 60px;
     width: 60px;
-    background-color: #789ca1;
+    transform: rotate(45deg);
+    background-color: $redColor;
+    margin-top: 15px;
+
+    .icon {
+      transform: rotate(-45deg);
+      background-size: cover;
+      background-position: center;
+      height: 60px;
+      width: 60px;
+    }
   }
 }
 

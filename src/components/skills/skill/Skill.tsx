@@ -5,12 +5,15 @@ import {Description} from "../../../common/components/description_block/Descript
 export type SkillType = {
     titleSkill: string
     description: string
+    styleImg: React.CSSProperties | undefined
 }
 
-export const Skill: React.FC<SkillType> = ({titleSkill, description}) => {
+export const Skill: React.FC<SkillType> = ({titleSkill, description, styleImg}) => {
     return (
         <div className={style.skill}>
-            <div className={style.icon}></div>
+            <div className={style.containerImg}>
+                <div className={style.icon} style={styleImg}></div>
+            </div>
             <Description title={titleSkill} description={description}/>
         </div>
     )
