@@ -13,7 +13,8 @@ export const Skills = (props: SkillsPropsType) => {
                 <Title text={"Skills"}/>
                 <div className={style.skills}>
                     {state.skills.map(skill => {
-                        return <Skill titleSkill={skill.title}
+                        return <Skill key={skill.title}
+                                      titleSkill={skill.title}
                                       description={skill.description} styleImg={skill.img}/>
                     })}
                 </div>
