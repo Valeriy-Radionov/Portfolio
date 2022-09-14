@@ -7,10 +7,10 @@ type DescriptionPropsType = {
 }
 export const Description: React.FC<DescriptionPropsType> = ({title, description}) => {
     return (
-        <>
+        <div>
             <h3 className={style.title}>{title}</h3>
             <p className={style.description}>{description}</p>
-        </>
+        </div>
     );
 };
 
