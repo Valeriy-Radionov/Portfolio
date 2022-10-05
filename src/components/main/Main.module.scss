@@ -4,8 +4,10 @@
 .mainBlock {
   height: 100vh;
   background-color: $backgroundColor;
+  padding-bottom: 50px;
 
   .container {
+    padding-top: 20px;
     @include containerOfItems(row);
     justify-content: space-between;
     flex-wrap: wrap;
@@ -17,8 +19,6 @@
 
   .greetings {
     padding-right: 10px;
-
-    background-color: $backgroundColor;
 
     & span {
       color: $textColor;
@@ -71,12 +71,12 @@
   .avatarImage {
     width: 300px;
     height: 400px;
-    background-color: lightslategray;
+    background-color: $backgroundColor;
     background-image: url("../../assets/images/avatar.jpeg");
     background-size: cover;
     background-position: center;
-    //@media (max-width: 749px) {
-    //  height: 300px;
-    //}
+    box-shadow: inset rgba(0,0,0,.5) -3px -3px 8px,
+    inset rgba(255, 255, 255, .9) 3px 3px 8px,
+    rgba(0, 0, 0, .8) 3px 3px 8px -3px;
   }
 }

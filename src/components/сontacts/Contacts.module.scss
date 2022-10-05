@@ -4,6 +4,7 @@
 .contactsBlock {
   width: 100%;
   background-color: $backgroundColor;
+  padding-bottom: 50px;
 
   .container {
     @include containerOfItems();
@@ -14,6 +15,41 @@
       display: flex;
       margin: 10px 0px;
       flex-direction: column;
+
+      .error {
+        margin-top: 0px;
+        color: rgb(255, 49, 49);
+        font-size: 14px;
+        font-family: $baseFont;
+      }
+
+      .inputContainer {
+        padding: 10px;
+
+        .item {
+          @include formCommonStyle()
+        }
+
+        & :focus {
+          outline: none;
+          box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, .5), inset 0 0 0 60px rgba(0, 0, 0, 0), 0 1px rgba(255, 255, 255, .08);
+        }
+      }
+
+      .messageContainer {
+        padding: 10px;
+
+        .message {
+          height: 100px;
+          @include formCommonStyle()
+        }
+
+        & :focus {
+          outline: none;
+          box-shadow: inset 0 1px 3px 1px rgba(0, 0, 0, .5), inset 0 0 0 60px rgba(0, 0, 0, 0), 0 1px rgba(255, 255, 255, .08);
+        }
+      }
+
     }
 
   }

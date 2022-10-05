@@ -5,25 +5,31 @@
   flex-direction: column;
   align-items: center;
   width: 250px;
-  border: 1px solid $redColor;
-  background-color: $backgroundColor;
+  background-color: $bjItems;
   text-align: center;
   border-radius: 1rem;
   margin-bottom: 10px;
+  padding: 2px;
 
   .containerImg {
     height: 60px;
     width: 60px;
     transform: rotate(45deg);
-    background-color: $redColor;
+    background-color: $yellowColor;
     margin-top: 15px;
+    box-shadow: inset rgba(0,0,0,.5) -3px -3px 8px,
+    inset rgba(255, 255, 255, .9) 3px 3px 8px,
+    rgba(0, 0, 0, .8) 3px 3px 8px -3px;
 
     .icon {
+      box-sizing: border-box;
+      margin: 12px;
       transform: rotate(-45deg);
       background-size: cover;
+      align-items: center;
       background-position: center;
-      height: 60px;
-      width: 60px;
+      height: 40px;
+      width: 40px;
     }
   }
 }

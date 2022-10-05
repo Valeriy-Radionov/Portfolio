@@ -1,17 +1,9 @@
 @import "src/common/styles/sass/variables";
 
 .btn {
-  box-sizing: border-box;
   z-index: 1;
   font-weight: 500;
   min-width: 120px;
-  //-webkit-appearance: none;
-  //-moz-appearance: none;
-  //display: -webkit-box;
-  //display: -webkit-flex;
-  //display: -ms-flexbox;
-  //-webkit-align-self: center;
-  //-ms-flex-item-align: center;
   appearance: none;
   background-color: transparent;
   border: 2px solid $redColor;
@@ -35,13 +27,14 @@
 }
 
 .third {
-  border-color: $primaryColor;
+  border-color: $redColor;
   color: $textColor;
-  box-shadow: 0 0 40px 40px $primaryColor inset, 0 0 0 0 $primaryColor;
+  box-shadow: 0 0 40px 40px $bjItems inset, 0 0 0 0 $bjItems;
   -webkit-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
 
   &:hover {
+    border-color: $primaryColor;
     box-shadow: 0 0 10px 0 $primaryColor inset, 0 0 10px 4px $primaryColor;
   }
 }

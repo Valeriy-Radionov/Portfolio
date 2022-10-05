@@ -4,6 +4,7 @@
 .footerBlock {
   width: 100%;
   background-color: $backgroundColor;
+  padding-bottom: 10px;
 
   .container {
     @include containerOfItems();
@@ -19,6 +20,7 @@
       display: flex;
       justify-content: space-between;
       width: 50%;
+      padding: 10px;
 
       .item {
         height: 50px;
@@ -27,6 +29,15 @@
         background-size: cover;
         background-position: center;
         border-radius: 50%;
+        box-shadow: inset rgba(0,0,0,.5) -3px -3px 8px,
+        inset rgba(255, 255, 255, .9) 3px 3px 8px,
+        rgba(0, 0, 0, .8) 3px 3px 8px -3px;
+
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0 0 0.1em 0.1em white inset;
+        }
+
         @media (max-width: 629px) {
           height: 30px;
           width: 30px;

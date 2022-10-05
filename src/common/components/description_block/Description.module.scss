@@ -1,13 +1,15 @@
 @import "src/common/styles/sass/variables";
 
 .container {
-  margin-top: 20px;
+  margin-top: 10px;
+  padding: 10px;
 
   .title {
     font-family: $titleFontFamily;
     line-height: 1.618;
+    letter-spacing: 0.1em;
     font-weight: 700;
-    color: $yellowColor;
+    color: $primaryColor;
     font-size: 16px;
     margin-top: 0;
     margin-block-start: 1.67em;
