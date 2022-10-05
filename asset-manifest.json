@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.eb5a4860.css",
-    "main.js": "/Portfolio/static/js/main.fe7343c6.js",
+    "main.css": "/Portfolio/static/css/main.7cdf678e.css",
+    "main.js": "/Portfolio/static/js/main.a165872c.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/todolist.jpg": "/Portfolio/static/media/todolist.cc751d82c82664a0f659.jpg",
-    "static/media/socialnetwork.png": "/Portfolio/static/media/socialnetwork.eb9b06e2411aae64c07a.png",
+    "static/media/learn-learning-education-studying-concept.jpg": "/Portfolio/static/media/learn-learning-education-studying-concept.7c99f7ed0e676de12b71.jpg",
+    "static/media/socialnetwork.jpg": "/Portfolio/static/media/socialnetwork.b913ecd2bd3f63cbd600.jpg",
     "static/media/avatar.jpeg": "/Portfolio/static/media/avatar.9551a37458467e64c755.jpeg",
+    "static/media/note.jpg": "/Portfolio/static/media/note.1e061fd2687c371a6148.jpg",
     "static/media/free-icon-github-270798.png": "/Portfolio/static/media/free-icon-github-270798.553c66159c5672f25df6.png",
     "static/media/telegram.png": "/Portfolio/static/media/telegram.9f245f3233b0faea9ffa.png",
-    "static/media/free-icon-js-5968509.png": "/Portfolio/static/media/free-icon-js-5968509.e9d170f029643ca8763d.png",
     "static/media/free-icon-linkedin-3536505.png": "/Portfolio/static/media/free-icon-linkedin-3536505.f249b38224ca41a0b909.png",
     "index.html": "/Portfolio/index.html",
-    "main.eb5a4860.css.map": "/Portfolio/static/css/main.eb5a4860.css.map",
-    "main.fe7343c6.js.map": "/Portfolio/static/js/main.fe7343c6.js.map",
+    "main.7cdf678e.css.map": "/Portfolio/static/css/main.7cdf678e.css.map",
+    "main.a165872c.js.map": "/Portfolio/static/js/main.a165872c.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb5a4860.css",
-    "static/js/main.fe7343c6.js"
+    "static/css/main.7cdf678e.css",
+    "static/js/main.a165872c.js"
   ]
 }
