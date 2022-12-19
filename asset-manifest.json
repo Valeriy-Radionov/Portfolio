@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.7cdf678e.css",
-    "main.js": "/Portfolio/static/js/main.a165872c.js",
+    "main.css": "/Portfolio/static/css/main.56851c6c.css",
+    "main.js": "/Portfolio/static/js/main.8a672d8a.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/learn-learning-education-studying-concept.jpg": "/Portfolio/static/media/learn-learning-education-studying-concept.7c99f7ed0e676de12b71.jpg",
     "static/media/socialnetwork.jpg": "/Portfolio/static/media/socialnetwork.b913ecd2bd3f63cbd600.jpg",
     "static/media/avatar.jpeg": "/Portfolio/static/media/avatar.9551a37458467e64c755.jpeg",
     "static/media/note.jpg": "/Portfolio/static/media/note.1e061fd2687c371a6148.jpg",
-    "static/media/free-icon-github-270798.png": "/Portfolio/static/media/free-icon-github-270798.553c66159c5672f25df6.png",
-    "static/media/telegram.png": "/Portfolio/static/media/telegram.9f245f3233b0faea9ffa.png",
-    "static/media/free-icon-linkedin-3536505.png": "/Portfolio/static/media/free-icon-linkedin-3536505.f249b38224ca41a0b909.png",
+    "static/media/language.png": "/Portfolio/static/media/language.9bc9292001395c9470e9.png",
+    "static/media/skype.png": "/Portfolio/static/media/skype.ab4e958cf232a0d52b44.png",
+    "static/media/github.png": "/Portfolio/static/media/github.553c66159c5672f25df6.png",
+    "static/media/telegram.png": "/Portfolio/static/media/telegram.fac147278d309c688d4a.png",
+    "static/media/linkedin.png": "/Portfolio/static/media/linkedin.3348813798ea3084f091.png",
     "index.html": "/Portfolio/index.html",
-    "main.7cdf678e.css.map": "/Portfolio/static/css/main.7cdf678e.css.map",
-    "main.a165872c.js.map": "/Portfolio/static/js/main.a165872c.js.map",
+    "main.56851c6c.css.map": "/Portfolio/static/css/main.56851c6c.css.map",
+    "main.8a672d8a.js.map": "/Portfolio/static/js/main.8a672d8a.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cdf678e.css",
-    "static/js/main.a165872c.js"
+    "static/css/main.56851c6c.css",
+    "static/js/main.8a672d8a.js"
   ]
 }
