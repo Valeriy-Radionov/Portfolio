@@ -1,0 +1,33 @@
+.containerImg {
+  // padding-right: 3%;
+  .styleImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url("../../../../assets/images/language.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset rgba(0, 0, 0, 0.5) -1px -1px 8px, inset rgba(255, 255, 255, 0.9) 1px 1px 5px, rgba(0, 0, 0, 0.8) 3px 3px 8px -3px;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 0.1em 0.1em rgb(67, 67, 67) inset;
+    }
+
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  .rotateImage {
+    animation-name: rotation;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    // animation-iteration-count: -1;
+    animation-timing-function: linear;
+  }
+}

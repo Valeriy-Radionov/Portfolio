@@ -3,7 +3,15 @@
 .container {
   margin-top: 10px;
   padding: 10px;
-
+  .wrapLink {
+    & a {
+      color: $textColor;
+      &:hover {
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
   .title {
     font-family: $titleFontFamily;
     line-height: 1.618;

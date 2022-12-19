@@ -4,6 +4,7 @@
   display: flex;
   color: $textColor;
   font-family: $baseFont;
+  align-items: center;
   justify-content: space-between;
   margin-right: 5vh;
   width: 50vh;
@@ -15,9 +16,27 @@
     line-height: 1.5em;
     text-decoration: none;
     transition: all 0.5s;
+    @media (max-width: 629px) {
+      margin-right: 5vh;
+    }
+    @media (max-width: 550px) {
+      margin-right: 20px;
+    }
+    @media (max-width: 360px) {
+      font-size: 0.85em;
+      margin-right: 15px;
+    }
   }
 
   @media (max-width: 629px) {
-    margin-left: 5vh;
+    justify-content: center;
+  }
+  @media (max-height: 540px) {
+    justify-content: space-between;
+    width: 90%;
+  }
+  @media (max-width: 550px) {
+    justify-content: flex-end;
+    margin: 0 10px 0 0;
   }
 }

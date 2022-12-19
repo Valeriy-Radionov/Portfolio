@@ -1,16 +1,30 @@
-import React from 'react';
+import React from "react"
+import { useAppSelector } from "../../../common/hooks/appHooks"
 import style from "./Nav.module.scss"
+import { SwitchLanguage } from "./switch-language/SwitchLanguage"
 
 type NavPropsType = {}
 
 export const Nav = (props: NavPropsType) => {
-    return (
-        <div className={style.nav}>
-            <a href="src/components/header/nav/Nav">Main</a>
-            <a href="src/components/header/nav/Nav">Skills</a>
-            <a href="src/components/header/nav/Nav">Projects</a>
-            <a href="src/components/header/nav/Nav">Contacts</a>
-        </div>
-    );
+  const state = useAppSelector((state) => state.dataPages.header)
+  return (
+    <div className={style.nav}>
+      {state.navTitle.map((el) => {
+        return (
+          <a
+            key={el}
+            onClick={() => {
+              const element = document.getElementById(el)
+              if (element) {
+                element.scrollIntoView({ behavior: "smooth" })
+              }
+            }}
+          >
+            {el}
+          </a>
+        )
+      })}
+      <SwitchLanguage />
+    </div>
+  )
 }
-

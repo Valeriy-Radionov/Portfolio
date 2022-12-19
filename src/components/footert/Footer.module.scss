@@ -25,13 +25,11 @@
       .item {
         height: 50px;
         width: 50px;
-        background-color: #a19776;
+        background-color: #fefefe;
         background-size: cover;
         background-position: center;
         border-radius: 50%;
-        box-shadow: inset rgba(0,0,0,.5) -3px -3px 8px,
-        inset rgba(255, 255, 255, .9) 3px 3px 8px,
-        rgba(0, 0, 0, .8) 3px 3px 8px -3px;
+        box-shadow: inset rgba(0, 0, 0, 0.5) -3px -3px 8px, inset rgba(255, 255, 255, 0.9) 3px 3px 8px, rgba(0, 0, 0, 0.8) 3px 3px 8px -3px;
 
         &:hover {
           cursor: pointer;
@@ -46,10 +44,3 @@
     }
   }
 }
-
-
-
-
-
-
-

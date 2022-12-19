@@ -14,6 +14,9 @@
     margin: 0 auto;
     @media (max-width: 810px) {
       justify-content: center;
+      padding-top: 65px;
+
+      height: 100%;
     }
   }
 
@@ -45,8 +48,7 @@
       font-family: $mono;
       overflow: hidden;
       border-right: 4px solid $textColor;
-      animation: flashingBorder 0.75s step-end infinite,
-      printedText 4.5s steps(19) infinite;
+      animation: flashingBorder 0.75s step-end infinite, printedText 4.5s steps(19) infinite;
 
       @keyframes printedText {
         from {
@@ -75,8 +77,6 @@
     background-image: url("../../assets/images/avatar.jpeg");
     background-size: cover;
     background-position: center;
-    box-shadow: inset rgba(0,0,0,.5) -3px -3px 8px,
-    inset rgba(255, 255, 255, .9) 3px 3px 8px,
-    rgba(0, 0, 0, .8) 3px 3px 8px -3px;
+    box-shadow: inset rgba(0, 0, 0, 0.5) -3px -3px 8px, inset rgba(255, 255, 255, 0.9) 3px 3px 8px, rgba(0, 0, 0, 0.8) 3px 3px 8px -3px;
   }
 }

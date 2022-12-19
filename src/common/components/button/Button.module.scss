@@ -1,6 +1,8 @@
 @import "src/common/styles/sass/variables";
 
 .btn {
+  display: flex;
+  align-items: center;
   z-index: 1;
   font-weight: 500;
   min-width: 120px;
@@ -20,7 +22,8 @@
   text-transform: uppercase;
   font-family: $baseFont;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $textColor;
     outline: 0;
   }
@@ -38,5 +41,3 @@
     box-shadow: 0 0 10px 0 $primaryColor inset, 0 0 10px 4px $primaryColor;
   }
 }
-
-

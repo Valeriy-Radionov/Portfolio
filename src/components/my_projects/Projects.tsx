@@ -1,29 +1,25 @@
-import React from "react";
+import React from "react"
+import { Title } from "../../common/components/title/Title"
+import { useAppSelector } from "../../common/hooks/appHooks"
+import { Project } from "./project/Project"
 import style from "./Projects.module.scss"
-import {Title} from "../../common/components/title/Title";
-import {Project} from "./project/Project";
-import {state} from "../../bll/state";
 
 type ProjectsPropsType = {}
 
 export const Projects: React.FC<ProjectsPropsType> = () => {
+  const state = useAppSelector((state) => state.dataPages)
+  const id = useAppSelector((state) => state.dataPages.header.navTitle[2])
 
-    return (
-        <div className={style.projectsBlock}>
-            <div className={style.container}>
-                <Title text={"My projects"}/>
-                <div className={style.projects}>
-                    {state.projects.map(res => {
-                        return <Project
-                            key={res.title}
-                            projectName={res.title}
-                            description={res.description}
-                            styleImg={res.img}
-                        />
-                    })
-                    }
-                </div>
-            </div>
+  return (
+    <div id={id} className={style.projectsBlock}>
+      <div className={style.container}>
+        <Title text={state.projects.title} />
+        <div className={style.projects}>
+          {state.projects.projectData.map((res) => {
+            return <Project key={res.title} projectName={res.title} description={res.description} styleImg={res.img} gitLink={res.linkGit} webLink={res.linkGhPage} />
+          })}
         </div>
-    )
+      </div>
+    </div>
+  )
 }
