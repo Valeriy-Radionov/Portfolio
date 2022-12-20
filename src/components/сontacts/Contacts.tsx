@@ -23,19 +23,19 @@ export const Contacts = (props: ContactsType) => {
       message: "",
     },
     validate: (values) => {
-      // const errors: FormikErrorType = {}
-      // if (!values.email) {
-      //   errors.email = "Required field"
-      // } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-      //   errors.email = "Invalid email address"
-      // }
-      // if (!values.senderName) {
-      //   errors.name = "Required field"
-      // }
-      // if (!values.message) {
-      //   errors.message = "Required field"
-      // }
-      // return errors
+      const errors: FormikErrorType = {}
+      if (!values.email) {
+        errors.email = "Required field"
+      } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+        errors.email = "Invalid email address"
+      }
+      if (!values.senderName) {
+        errors.senderName = "Required field"
+      }
+      if (!values.message) {
+        errors.message = "Required field"
+      }
+      return errors
     },
     onSubmit: (values) => {
       console.log(values)
