@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.56851c6c.css",
-    "main.js": "/Portfolio/static/js/main.8a672d8a.js",
+    "main.css": "/Portfolio/static/css/main.e1fc505b.css",
+    "main.js": "/Portfolio/static/js/main.f2b64fa2.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/learn-learning-education-studying-concept.jpg": "/Portfolio/static/media/learn-learning-education-studying-concept.7c99f7ed0e676de12b71.jpg",
-    "static/media/socialnetwork.jpg": "/Portfolio/static/media/socialnetwork.b913ecd2bd3f63cbd600.jpg",
     "static/media/avatar.jpeg": "/Portfolio/static/media/avatar.9551a37458467e64c755.jpeg",
     "static/media/note.jpg": "/Portfolio/static/media/note.1e061fd2687c371a6148.jpg",
     "static/media/language.png": "/Portfolio/static/media/language.9bc9292001395c9470e9.png",
@@ -13,12 +12,12 @@
     "static/media/telegram.png": "/Portfolio/static/media/telegram.fac147278d309c688d4a.png",
     "static/media/linkedin.png": "/Portfolio/static/media/linkedin.3348813798ea3084f091.png",
     "index.html": "/Portfolio/index.html",
-    "main.56851c6c.css.map": "/Portfolio/static/css/main.56851c6c.css.map",
-    "main.8a672d8a.js.map": "/Portfolio/static/js/main.8a672d8a.js.map",
+    "main.e1fc505b.css.map": "/Portfolio/static/css/main.e1fc505b.css.map",
+    "main.f2b64fa2.js.map": "/Portfolio/static/js/main.f2b64fa2.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56851c6c.css",
-    "static/js/main.8a672d8a.js"
+    "static/css/main.e1fc505b.css",
+    "static/js/main.f2b64fa2.js"
   ]
 }
