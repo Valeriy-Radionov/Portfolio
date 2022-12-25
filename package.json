@@ -20,12 +20,16 @@
     "formik": "^2.2.9",
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
+    "react-awesome-reveal": "^4.1.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.5.0",
     "react-scripts": "5.0.1",
+    "react-tsparticles": "^2.7.0",
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.2",
+    "tsparticles": "^2.7.0",
+    "tsparticles-engine": "^2.7.0",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
@@ -57,5 +61,9 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Valeriy-Radionov/Portfolio.git",
+  "author": "valera <traberker901@gmail.com>",
+  "license": "MIT"
 }

@@ -16,6 +16,10 @@
     line-height: 1.5em;
     text-decoration: none;
     transition: all 0.5s;
+    &:hover {
+      cursor: pointer;
+      color: $primaryColor;
+    }
     @media (max-width: 629px) {
       margin-right: 5vh;
     }
