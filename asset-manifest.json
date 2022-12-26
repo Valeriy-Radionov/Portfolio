@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e1fc505b.css",
-    "main.js": "/Portfolio/static/js/main.f2b64fa2.js",
+    "main.css": "/Portfolio/static/css/main.2fbaed1f.css",
+    "main.js": "/Portfolio/static/js/main.b891d6c9.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/learn-learning-education-studying-concept.jpg": "/Portfolio/static/media/learn-learning-education-studying-concept.7c99f7ed0e676de12b71.jpg",
     "static/media/avatar.jpeg": "/Portfolio/static/media/avatar.9551a37458467e64c755.jpeg",
@@ -12,12 +12,12 @@
     "static/media/telegram.png": "/Portfolio/static/media/telegram.fac147278d309c688d4a.png",
     "static/media/linkedin.png": "/Portfolio/static/media/linkedin.3348813798ea3084f091.png",
     "index.html": "/Portfolio/index.html",
-    "main.e1fc505b.css.map": "/Portfolio/static/css/main.e1fc505b.css.map",
-    "main.f2b64fa2.js.map": "/Portfolio/static/js/main.f2b64fa2.js.map",
+    "main.2fbaed1f.css.map": "/Portfolio/static/css/main.2fbaed1f.css.map",
+    "main.b891d6c9.js.map": "/Portfolio/static/js/main.b891d6c9.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1fc505b.css",
-    "static/js/main.f2b64fa2.js"
+    "static/css/main.2fbaed1f.css",
+    "static/js/main.b891d6c9.js"
   ]
 }
