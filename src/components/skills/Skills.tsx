@@ -1,9 +1,8 @@
-import React from "react"
-import style from "./Skills.module.scss"
-import { Skill } from "./skill/Skill"
+import { Fade, Flip } from "react-awesome-reveal"
 import { Title } from "../../common/components/title/Title"
-import { state } from "../../bll/state"
 import { useAppSelector } from "../../common/hooks/appHooks"
+import { Skill } from "./skill/Skill"
+import style from "./Skills.module.scss"
 
 type SkillsPropsType = {}
 
@@ -14,10 +13,16 @@ export const Skills = (props: SkillsPropsType) => {
   return (
     <div id={id} className={style.skillsBlock}>
       <div className={style.skillsContainer}>
-        <Title text={state.skills.title} />
+        <Fade direction="down">
+          <Title text={state.skills.title} />
+        </Fade>
         <div className={style.skills}>
           {state.skills.skillsData.map((skill) => {
-            return <Skill key={skill.title} titleSkill={skill.title} description={skill.description} styleImg={skill.img} />
+            return (
+              <Flip direction="horizontal">
+                <Skill key={skill.title} titleSkill={skill.title} description={skill.description} styleImg={skill.img} />
+              </Flip>
+            )
           })}
         </div>
       </div>

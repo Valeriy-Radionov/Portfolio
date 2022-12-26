@@ -25,7 +25,7 @@ export const ParticlesMain = () => {
         },
         particles: {
           number: {
-            value: 15,
+            value: 25,
             density: {
               enable: true,
             },
@@ -66,13 +66,6 @@ export const ParticlesMain = () => {
               size_min: 10,
               sync: false,
             },
-          },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#ffffff",
-            opacity: 0.4,
-            width: 1,
           },
           move: {
             enable: true,

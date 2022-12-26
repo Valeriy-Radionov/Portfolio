@@ -1,8 +1,8 @@
 import React from "react"
-import style from "./Project.module.scss"
 import { Button } from "../../../common/components/button/Button"
 import { Description } from "../../../common/components/description_block/Description"
 import { useAppSelector } from "../../../common/hooks/appHooks"
+import style from "./Project.module.scss"
 
 type ProjectType = {
   projectName: string

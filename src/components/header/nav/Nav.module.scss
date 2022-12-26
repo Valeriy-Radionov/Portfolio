@@ -5,42 +5,30 @@
   color: $textColor;
   font-family: $baseFont;
   align-items: center;
+  width: 100%;
   justify-content: space-between;
-  margin-right: 5vh;
-  width: 50vh;
-
-  & a {
-    font-weight: 600;
-    font-size: 1rem;
-    color: $textColor;
-    line-height: 1.5em;
-    text-decoration: none;
-    transition: all 0.5s;
-    &:hover {
-      cursor: pointer;
-      color: $primaryColor;
+  .container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    & a {
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: $textColor;
+      line-height: 1.5em;
+      text-decoration: none;
+      transition: all 0.5s;
+      @media (max-width: 650px) {
+        font-size: 1rem;
+      }
+      @media (max-width: 350px) {
+        font-size: 0.7rem;
+      }
+      &:hover {
+        cursor: pointer;
+        color: $primaryColor;
+      }
     }
-    @media (max-width: 629px) {
-      margin-right: 5vh;
-    }
-    @media (max-width: 550px) {
-      margin-right: 20px;
-    }
-    @media (max-width: 360px) {
-      font-size: 0.85em;
-      margin-right: 15px;
-    }
-  }
-
-  @media (max-width: 629px) {
-    justify-content: center;
-  }
-  @media (max-height: 540px) {
-    justify-content: space-between;
-    width: 90%;
-  }
-  @media (max-width: 550px) {
-    justify-content: flex-end;
-    margin: 0 10px 0 0;
   }
 }

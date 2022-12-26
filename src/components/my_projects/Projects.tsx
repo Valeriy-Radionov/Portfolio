@@ -1,4 +1,5 @@
 import React from "react"
+import { Fade } from "react-awesome-reveal"
 import { Title } from "../../common/components/title/Title"
 import { useAppSelector } from "../../common/hooks/appHooks"
 import { Project } from "./project/Project"
@@ -13,7 +14,9 @@ export const Projects: React.FC<ProjectsPropsType> = () => {
   return (
     <div id={id} className={style.projectsBlock}>
       <div className={style.container}>
-        <Title text={state.projects.title} />
+        <Fade direction="down">
+          <Title text={state.projects.title} />
+        </Fade>
         <div className={style.projects}>
           {state.projects.projectData.map((res) => {
             return <Project key={res.title} projectName={res.title} description={res.description} styleImg={res.img} gitLink={res.linkGit} webLink={res.linkGhPage} />

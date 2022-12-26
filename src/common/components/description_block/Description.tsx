@@ -1,4 +1,5 @@
 import React from "react"
+import { Fade, AttentionSeeker } from "react-awesome-reveal"
 import style from "./Description.module.scss"
 
 type DescriptionPropsType = {
@@ -10,17 +11,23 @@ type DescriptionPropsType = {
 export const Description: React.FC<DescriptionPropsType> = ({ title, description, gitLink, isProgect }) => {
   return (
     <div className={style.container}>
-      <h3 className={style.title}>{title}</h3>
+      <AttentionSeeker>
+        <h3 className={style.title}>{title}</h3>
+      </AttentionSeeker>
       {isProgect && (
         <div className={style.wrapLink}>
           <div>
-            <a href={gitLink} target="_blank" style={{ color: "#ff8f2c" }}>
-              git
-            </a>
+            <Fade direction="left">
+              <a href={gitLink} target="_blank" style={{ color: "#ff8f2c" }}>
+                git
+              </a>
+            </Fade>
           </div>
         </div>
       )}
-      <p className={style.description}>{description}</p>
+      <Fade direction="up">
+        <p className={style.description}>{description}</p>
+      </Fade>
     </div>
   )
 }

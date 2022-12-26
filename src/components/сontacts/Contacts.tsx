@@ -1,10 +1,10 @@
-import React from "react"
-import style from "./Contacts.module.scss"
-import { Button, SubmitBtn } from "../../common/components/button/Button"
-import { Title } from "../../common/components/title/Title"
 import { useFormik } from "formik"
-import { useAppDispatch, useAppSelector } from "../../common/hooks/appHooks"
+import { Fade } from "react-awesome-reveal"
 import { sendMessageTC } from "../../bll/reducers/messageReducer"
+import { SubmitBtn } from "../../common/components/button/Button"
+import { Title } from "../../common/components/title/Title"
+import { useAppDispatch, useAppSelector } from "../../common/hooks/appHooks"
+import style from "./Contacts.module.scss"
 
 type ContactsType = {}
 type FormikErrorType = {
@@ -46,20 +46,28 @@ export const Contacts = (props: ContactsType) => {
   return (
     <form id={id} className={style.contactsBlock} onSubmit={formik.handleSubmit}>
       <div className={style.container}>
-        <Title text={state.title} />
+        <Fade direction="down">
+          <Title text={state.title} />
+        </Fade>
         <form onSubmit={formik.handleSubmit} className={style.formContainer}>
-          <div className={style.inputContainer}>
-            <input className={style.item} placeholder={state.placeHoldName} {...formik.getFieldProps("senderName")} />
-            {formik.touched.senderName && formik.errors.senderName && <div className={style.error}>{formik.errors.senderName}</div>}
-          </div>
-          <div className={style.inputContainer}>
-            <input className={style.item} placeholder={"E-mail"} {...formik.getFieldProps("email")} />
-            {formik.touched.email && formik.errors.email && <div className={style.error}>{formik.errors.email}</div>}
-          </div>
-          <div className={style.messageContainer}>
-            <textarea className={style.message} placeholder={state.placeHoldMsg} {...formik.getFieldProps("message")} />
-            {formik.touched.message && formik.errors.message && <div className={style.error}>{formik.errors.message}</div>}
-          </div>
+          <Fade direction="left">
+            <div className={style.inputContainer}>
+              <input className={style.item} placeholder={state.placeHoldName} {...formik.getFieldProps("senderName")} />
+              {formik.touched.senderName && formik.errors.senderName && <div className={style.error}>{formik.errors.senderName}</div>}
+            </div>
+          </Fade>
+          <Fade direction="right">
+            <div className={style.inputContainer}>
+              <input className={style.item} placeholder={"E-mail"} {...formik.getFieldProps("email")} />
+              {formik.touched.email && formik.errors.email && <div className={style.error}>{formik.errors.email}</div>}
+            </div>
+          </Fade>
+          <Fade direction="up">
+            <div className={style.messageContainer}>
+              <textarea className={style.message} placeholder={state.placeHoldMsg} {...formik.getFieldProps("message")} />
+              {formik.touched.message && formik.errors.message && <div className={style.error}>{formik.errors.message}</div>}
+            </div>
+          </Fade>
         </form>
         <SubmitBtn type={"submit"}>{state.btnName}</SubmitBtn>
       </div>
