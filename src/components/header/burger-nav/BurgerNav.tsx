@@ -1,13 +1,13 @@
 import { Link } from "react-scroll"
 import { useAppSelector } from "../../../common/hooks/appHooks"
-import style from "./Nav.module.scss"
-import { SwitchLanguage } from "./switch-language/SwitchLanguage"
+import { SwitchLanguage } from "../nav/switch-language/SwitchLanguage"
+import style from "./BurgerNav.module.scss"
 
-export const Nav = () => {
+export const BurgerNav = () => {
   const state = useAppSelector((state) => state.dataPages.header)
 
   return (
-    <div className={style.nav}>
+    <div className={style.burherNav}>
       <div className={style.container}>
         {state.navTitle.map((el) => {
           return (

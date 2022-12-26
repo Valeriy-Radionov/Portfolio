@@ -25,7 +25,7 @@ export const ParticlesMain = () => {
         },
         particles: {
           number: {
-            value: 25,
+            value: 20,
             density: {
               enable: true,
             },
@@ -91,10 +91,6 @@ export const ParticlesMain = () => {
                 force: 60,
                 smooth: 10,
               },
-            },
-            onclick: {
-              enable: true,
-              mode: "push",
             },
             resize: true,
           },

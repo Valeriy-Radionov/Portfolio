@@ -2,6 +2,7 @@ import { Fade } from "react-awesome-reveal"
 import { useAppSelector } from "../../common/hooks/appHooks"
 import style from "./Main.module.scss"
 import { ParticlesMain } from "./particles/Particles"
+import Tilt from "react-parallax-tilt"
 
 export const Main = () => {
   const state = useAppSelector((state) => state.dataPages)
@@ -23,7 +24,9 @@ export const Main = () => {
             </div>
           </Fade>
           <Fade direction="down">
-            <div className={style.avatarImage}></div>
+            <Tilt tiltMaxAngleX={35} tiltMaxAngleY={35} perspective={900} scale={1.1} transitionSpeed={2000} gyroscope={true}>
+              <div className={style.avatarImage}></div>
+            </Tilt>
           </Fade>
         </div>
       </div>

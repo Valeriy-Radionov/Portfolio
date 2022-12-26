@@ -1,7 +1,9 @@
 @import "src/common/styles/sass/variables";
 
-.nav {
+.burherNav {
   display: flex;
+  flex-direction: column;
+  width: 300px;
   color: $textColor;
   font-family: $baseFont;
   align-items: center;
