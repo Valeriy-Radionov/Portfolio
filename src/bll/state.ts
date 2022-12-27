@@ -1,5 +1,5 @@
 import todoImage from "../assets/images/note.jpg"
-import socialImage from "../assets/images/socialnetwork.jpg"
+import chatImage from "../assets/images/chatImage.jpg"
 import learningCards from "../assets/images/learn-learning-education-studying-concept.jpg"
 import redux from "../assets/images/redux_logo_icon_144932.png"
 import js from "../assets/images/test_js_icon_131933.png"
@@ -7,6 +7,10 @@ import sass from "../assets/images/icons8-sass-150.png"
 import ts from "../assets/images/test_typescript_icon_131927.png"
 import react from "../assets/images/react_logo_icon_144942.png"
 import css from "../assets/images/css_logo_icon_181257.png"
+import nodejs from "../assets/images/nodeJS.png"
+import other from "../assets/images/other.png"
+import git from "../assets/images/icons8-git-100.png"
+import swift from "../assets/images/swift.png"
 import telegram from "../assets/images/telegram.png"
 import linkedin from "../assets/images/linkedin.png"
 import github from "../assets/images/github.png"
@@ -35,7 +39,7 @@ export const state = {
             linkGit: "https://github.com/Valeriy-Radionov/cards",
             linkGhPage: "https://valeriy-radionov.github.io/cards/#/registration",
             description:
-              "Do you like practising English vocabulary? In this section there are lots of flashcards for you to print. Play flashcards games to help you remember new words. There are also some flashcards for you to colour and write!",
+              "This application is a platform which allows to learn from cards. You can create, edit, delete decks with cards, learn from your own cards as well as from other people's cards, and add cards as photos. Technologies used: React(TS) + Redux, UI - SCSS+mui.",
             img: {
               backgroundImage: `url(${learningCards})`,
             },
@@ -45,7 +49,7 @@ export const state = {
             linkGit: " https://github.com/Valeriy-Radionov/ToDoList",
             linkGhPage: "https://to-do-list-plum-psi.vercel.app/",
             description:
-              "In issues, comments, and pull request descriptions are incredibly useful for project coordination and keeping track of important items. Starting today, we are adding read-only task lists to all Markdown documents in repositories and wikis. So now, when you write",
+              "The functionality of the application allows all CRUD operations with notes (all notes are stored on the server). Technologies used: React(TS) + Redux, UI-CSS+mui, unit tests",
             img: {
               backgroundImage: `url(${todoImage})`,
             },
@@ -55,9 +59,9 @@ export const state = {
             linkGit: "https://github.com/Valeriy-Radionov/anonymous-chat",
             linkGhPage: "https://valeriy-radionov.github.io/anonymous-chat/",
             description:
-              "Do you like practising English vocabulary? In this section there are lots of flashcards for you to print. Play flashcards games to help you remember new words. There are also some flashcards for you to colour and write!",
+              "The application is an anonymous chat room where messages can be exchanged by specifying the recipient's name, subject and text of the message (login is by username). Technologies used: React(TS) + Redux Toolkit, UI-CSS+mui, Nodejs, MongoDB",
             img: {
-              backgroundImage: `url(${learningCards})`,
+              backgroundImage: `url(${chatImage})`,
             },
           },
         ],
@@ -104,28 +108,28 @@ export const state = {
             title: "Node js",
             description: "Used Express framework for: created authorization block, СRUD database operations(MongoDB), interaction with third-party services(google, sendgrid)",
             img: {
-              backgroundImage: `url(${sass})`,
+              backgroundImage: `url(${nodejs})`,
             },
           },
           {
             title: "GIT",
             description: "Commits, branches, merge, pull/push, teamwork",
             img: {
-              backgroundImage: `url(${sass})`,
+              backgroundImage: `url(${git})`,
             },
           },
           {
             title: "Other",
             description: "OOP, SOLID principles, Figma(Sketch), Storybook, Unit testing",
             img: {
-              backgroundImage: `url(${sass})`,
+              backgroundImage: `url(${other})`,
             },
           },
           {
             title: "Swift",
-            description: "Also studied programming language Swift(ios). Wrote several tests projects.",
+            description: "Also studied programming language Swift(ios). Wrote several test projects.",
             img: {
-              backgroundImage: `url(${sass})`,
+              backgroundImage: `url(${swift})`,
             },
           },
         ],
@@ -191,7 +195,7 @@ export const state = {
             linkGit: "https://github.com/Valeriy-Radionov/cards",
             linkGhPage: "https://valeriy-radionov.github.io/cards/#/registration",
             description:
-              "Do you like practising English vocabulary? In this section there are lots of flashcards for you to print. Play flashcards games to help you remember new words. There are also some flashcards for you to colour and write!",
+              "Данное приложение представляет собой платформу, которая позволяет обучаться по карточкам. Можно создавать редактировать, удалять колоды с карточками, обучаться как по своим созданным карточкам, так и по чужим, реализован функционал по добавлению карточек в виде фото. Используемые технологии: React(TS) + Redux, UI- SCSS+mui.",
             img: {
               backgroundImage: `url(${learningCards})`,
             },
@@ -201,7 +205,7 @@ export const state = {
             linkGit: " https://github.com/Valeriy-Radionov/ToDoList",
             linkGhPage: "https://valeriy-radionov.github.io/cards/#/registration",
             description:
-              "In issues, comments, and pull request descriptions are incredibly useful for project coordination and keeping track of important items. Starting today, we are adding read-only task lists to all Markdown documents in repositories and wikis. So now, when you write",
+              "Функционал приложения позволяет проделывать все CRUD операции с заметками(все заметки сохраняются на сервере). Используемые технологии: React(TS) + Redux, UI-CSS+mui, unit tests",
             img: {
               backgroundImage: `url(${todoImage})`,
             },
@@ -213,7 +217,7 @@ export const state = {
             description:
               "Приложение представляет собой: анонимный чат(вход по имени), в котором можно обмениваться сообщениям, указав имя получателя, тему и текст сообщения. Используемые технологии: React(TS) + Redux Toolkit, UI-CSS+mui, Nodejs, MongoDB",
             img: {
-              backgroundImage: `url(${learningCards})`,
+              backgroundImage: `url(${chatImage})`,
             },
           },
         ],
@@ -261,28 +265,28 @@ export const state = {
             title: "Node js",
             description: "Использовал фреймворк Express для: создания блока авторизации, СRUD операций с базой данных , взаимодействия со сторонними сервисами (google, sendgrid)",
             img: {
-              backgroundImage: `url(${sass})`,
+              backgroundImage: `url(${nodejs})`,
             },
           },
           {
             title: "GIT",
             description: "Commits, branches, merge, pull/push, работа в команде",
             img: {
-              backgroundImage: `url(${sass})`,
+              backgroundImage: `url(${git})`,
             },
           },
           {
             title: "Other",
             description: "ООП, SOLID принцыпы, Figma(Sketch), Storybook, Unit testing",
             img: {
-              backgroundImage: `url(${sass})`,
+              backgroundImage: `url(${other})`,
             },
           },
           {
             title: "Swift",
             description: "Также изучал язык программирования Swift(ios). Написал несколько тестовых проектов.",
             img: {
-              backgroundImage: `url(${sass})`,
+              backgroundImage: `url(${swift})`,
             },
           },
         ],
