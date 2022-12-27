@@ -1,39 +1,66 @@
 @import "src/common/styles/sass/variables";
 
-.burherNav {
+.burgerNav {
   display: flex;
-  flex-direction: column;
-  width: 300px;
+  width: 90%;
+  height: 100%;
   color: $textColor;
   font-family: $baseFont;
   align-items: center;
-  width: 100%;
-  justify-content: space-between;
+  justify-content: right;
+  margin: 0 auto;
+  .burgerMenu {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background-image: url("../../../assets/images/menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &:hover {
+      cursor: pointer;
+      border-color: $primaryColor;
+      box-shadow: 0 0 10px 0 $primaryColor inset, 0 0 10px 1px $primaryColor;
+    }
+  }
+
   .container {
     display: flex;
-    width: 100%;
+    background-color: rgba(11, 11, 11, 0.87);
+    flex-direction: column;
+    position: absolute;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    top: 81px;
+    right: 0;
+    left: 0;
+    height: 200px;
+    transform: translate(0, -280px);
+    transition: 0.3s;
     .active {
       color: $yellowColor;
     }
     & a {
       font-weight: 600;
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       color: $textColor;
       line-height: 1.5em;
       text-decoration: none;
       transition: all 0.5s;
-      @media (max-width: 650px) {
-        font-size: 1rem;
-      }
-      @media (max-width: 350px) {
-        font-size: 0.7rem;
-      }
       &:hover {
         cursor: pointer;
         color: $primaryColor;
       }
     }
+  }
+  .show {
+    // position: absolute;
+    // flex-direction: column;
+    // display: flex;
+    transform: translate(0, 0);
+  }
+  @media screen and (min-width: 550px) {
+    display: none;
   }
 }
