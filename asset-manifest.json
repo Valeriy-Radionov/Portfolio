@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.8f96fd9d.css",
-    "main.js": "/Portfolio/static/js/main.69843b9e.js",
+    "main.js": "/Portfolio/static/js/main.8b659151.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/learn-learning-education-studying-concept.jpg": "/Portfolio/static/media/learn-learning-education-studying-concept.7c99f7ed0e676de12b71.jpg",
     "static/media/avatar.jpeg": "/Portfolio/static/media/avatar.9551a37458467e64c755.jpeg",
@@ -9,11 +9,11 @@
     "static/media/note.jpg": "/Portfolio/static/media/note.1e061fd2687c371a6148.jpg",
     "index.html": "/Portfolio/index.html",
     "main.8f96fd9d.css.map": "/Portfolio/static/css/main.8f96fd9d.css.map",
-    "main.69843b9e.js.map": "/Portfolio/static/js/main.69843b9e.js.map",
+    "main.8b659151.js.map": "/Portfolio/static/js/main.8b659151.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8f96fd9d.css",
-    "static/js/main.69843b9e.js"
+    "static/js/main.8b659151.js"
   ]
 }
