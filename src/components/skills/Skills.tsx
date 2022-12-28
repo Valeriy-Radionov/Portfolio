@@ -1,4 +1,4 @@
-import { Fade, Flip } from "react-awesome-reveal"
+import { Bounce, Fade, Hinge, Slide } from "react-awesome-reveal"
 import { Title } from "../../common/components/title/Title"
 import { useAppSelector } from "../../common/hooks/appHooks"
 import { Skill } from "./skill/Skill"
@@ -18,11 +18,7 @@ export const Skills = (props: SkillsPropsType) => {
         </Fade>
         <div className={style.skills}>
           {state.skills.skillsData.map((skill) => {
-            return (
-              <Flip direction="horizontal">
-                <Skill key={skill.title} titleSkill={skill.title} description={skill.description} styleImg={skill.img} />
-              </Flip>
-            )
+            return <Skill key={skill.title} titleSkill={skill.title} description={skill.description} styleImg={skill.img} />
           })}
         </div>
       </div>
