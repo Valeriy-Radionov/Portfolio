@@ -1,6 +1,7 @@
 import React from "react"
 import style from "./Skill.module.scss"
 import { Description } from "../../../common/components/description_block/Description"
+import { Bounce, Fade, Flip, Slide } from "react-awesome-reveal"
 
 export type SkillType = {
   titleSkill: string

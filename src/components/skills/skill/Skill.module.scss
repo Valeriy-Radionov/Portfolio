@@ -17,9 +17,7 @@
     transform: rotate(45deg);
     background-color: $yellowColor;
     margin-top: 15px;
-    box-shadow: inset rgba(0,0,0,.5) -3px -3px 8px,
-    inset rgba(255, 255, 255, .9) 3px 3px 8px,
-    rgba(0, 0, 0, .8) 3px 3px 8px -3px;
+    box-shadow: inset rgba(0, 0, 0, 0.5) -3px -3px 8px, inset rgba(255, 255, 255, 0.9) 3px 3px 8px, rgba(0, 0, 0, 0.8) 3px 3px 8px -3px;
 
     .icon {
       box-sizing: border-box;
@@ -33,5 +31,3 @@
     }
   }
 }
-
-
